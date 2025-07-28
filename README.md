@@ -5,33 +5,31 @@
 
 ---
 
-# 🍃 Detection of Mosambi Leaf Diseases using YOLOv8
+# Detection of Mosambi Leaf Diseases using YOLOv8
 
 This project implements a **YOLOv8-based real-time object detection model** to detect and classify various **Mosambi (Sweet Lime) leaf diseases**. By leveraging a custom image dataset, this model aims to support **early diagnosis** and help improve **crop health monitoring and management**.
 
 ---
 
-## 📌 Project Highlights
+##  Project Highlights
 
-* 🚀 Trained a YOLOv8 model on a **custom-labeled Mosambi leaf dataset**
-* 🧠 Real-time detection and classification of leaf diseases
-* 📈 Boosts precision in early disease identification for better yield outcomes
-* ⚡️ Lightweight and fast – optimized for edge deployment and field use
-
----
-
-## 🗂️ Dataset
-
-* **Type:** Custom dataset of Mosambi leaf images
-* **Classes:** Healthy, Leaf Spot, Bacterial Blight, Mosaic Virus, etc.
-* **Format:** Annotated using YOLO format (bounding boxes with class labels)
-* **Tools Used:** Roboflow / CVAT (for annotation)
-
-> Note: The dataset is not publicly available due to data privacy or collection limitations.
+*  Trained a YOLOv8 model on a **custom-labeled Mosambi leaf dataset**
+*  Real-time detection and classification of leaf diseases
+*  Boosts precision in early disease identification for better yield outcomes
+*  Lightweight and fast – optimized for edge deployment and field use
 
 ---
 
-## 🧠 Model Overview
+##  Dataset
+
+Type: Custom dataset of Mosambi leaf images
+Classes: Healthy, Leaf Spot, Bacterial Blight, Mosaic Virus, etc.
+Format: Annotated using YOLO format (bounding boxes with class labels)
+Tools Used: Roboflow / CVAT (for annotation)
+
+
+
+## Model Overview
 
 * **Model Architecture:** [YOLOv8](https://github.com/ultralytics/ultralytics)
 * **Framework:** PyTorch (via Ultralytics library)
@@ -40,14 +38,7 @@ This project implements a **YOLOv8-based real-time object detection model** to d
 
 ---
 
-## 🔧 Installation
-
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/yourusername/Detection-of-Mosambi-Leaf-Diseases.git
-   cd Detection-of-Mosambi-Leaf-Diseases
-   ```
+##  Installation
 
 2. **Create environment & install dependencies**
 
@@ -63,9 +54,9 @@ This project implements a **YOLOv8-based real-time object detection model** to d
 
 ---
 
-## 🏋️‍♂️ Training
+## Training
 
-If you're using your own dataset:
+If you're using your dataset:
 
 ```bash
 yolo task=detect mode=train model=yolov8n.pt data=leaf.yaml epochs=50 imgsz=640
@@ -75,7 +66,7 @@ Replace `leaf.yaml` with your dataset config file specifying class names and pat
 
 ---
 
-## 🔍 Inference
+##  Inference
 
 To run detection on a single image or folder:
 
@@ -87,7 +78,7 @@ yolo task=detect mode=predict model=best.pt source=path/to/image_or_folder
 
 ---
 
-## 📊 Results
+##  Results
 
 | Metric    | Score |
 | --------- | ----- |
@@ -100,29 +91,29 @@ yolo task=detect mode=predict model=best.pt source=path/to/image_or_folder
 
 ---
 
-## 📷 Example Output
+##  Example Output
 
 ![Detection Example](assets/example_detection.jpg)
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 
-* 📦 Expand dataset size and diversity (lighting, angles)
-* 🌐 Deploy model on mobile/edge devices for in-field diagnostics
-* 📊 Add analytics dashboard for tracking disease frequency over time
-* 🧪 Integrate with leaf segmentation for more precise ROI detection
+*  Expand dataset size and diversity (lighting, angles)
+*  Deploy model on mobile/edge devices for in-field diagnostics
+* Add analytics dashboard for tracking disease frequency over time
+* Integrate with leaf segmentation for more precise ROI detection
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please fork the repo, create a branch, and submit a pull request.
 
 
 ---
 
-## 🙌 Acknowledgments
+##  Acknowledgments
 
 * [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics)
 * Roboflow (for annotation & dataset management)
